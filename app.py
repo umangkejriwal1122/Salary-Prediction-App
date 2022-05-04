@@ -12,6 +12,7 @@ Salary vs. *Experience*
 """)
 
 exp = st.sidebar.slider('Experience',1.0,50.0,2.0)
+#exp = st.text_input("Experience", 2.0)
 reg = joblib.load("salary.pkl")
 y_pred = reg.predict([[exp]])
 
